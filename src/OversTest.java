@@ -28,7 +28,7 @@ public class OversTest {
 	@Test
 	public void testGetscore() {
 		//fail("Not yet implemented");
-		int sum;
+		int sum=0;
 		int[] scr=new int[6];
 		scr[0]=1;
 		scr[1]=2;
@@ -36,10 +36,11 @@ public class OversTest {
 		scr[3]=1;
 		scr[4]=0;
 		scr[5]=0;
+		int n=4;
 		Overs over=new Overs(scr);
-		sum=over.getBall();
-		assertEquals(5,sum);
-	
+		sum=over.getscore(n);
+		assertEquals(1,sum);
+		System.out.println("The runs for 4th ball is " +sum);
 	}
 
 }
