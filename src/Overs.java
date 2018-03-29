@@ -1,19 +1,22 @@
 
 public class Overs {
-	Balls[] ball=new Balls[6];
+	int[] ball={0,0,0,0,0,0,0};
+	int sum=0;
 
-	public void setBall(int s[]) {
+	public Overs(int[] s) {
 		for(int i=0;i<6;i++)
-			ball[i].score=s[i];
-		
+			ball[i]=s[i];
 	}
 
+
 	public int getBall() {
-		int sum=0;
 		for(int i=0;i<6;i++)
-			 sum=ball[i].score;
+			 sum=sum+ball[i];
 		return sum;
 	}
 	
-	
+	public int getscore(int i){
+		sum=sum+ball[i];
+		return sum;
+	}
 }
