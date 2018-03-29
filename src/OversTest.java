@@ -39,7 +39,7 @@ public class OversTest {
 		Overs over=new Overs(scr);
 		sum=over.getBall();
 		assertEquals(5,sum);
-		
+	
 	}
 
 }
