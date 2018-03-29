@@ -5,9 +5,13 @@ public class Overs {
 
 	public Overs(int[] s) {
 		for(int i=0;i<6;i++)
-			ball[i]=s[i];
+			ball[i]=(s[i]);
 	}
-
+	
+	public int getscore(int i){
+		int sum=ball[i-1];
+		return sum;
+	}
 
 	public int getBall() {
 		for(int i=0;i<6;i++)
@@ -15,8 +19,5 @@ public class Overs {
 		return sum;
 	}
 	
-	public int getscore(int i){
-		sum=sum+ball[i];
-		return sum;
-	}
+	
 }
