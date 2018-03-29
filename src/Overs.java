@@ -17,6 +17,7 @@ public class Overs {
 		for(int i=0;i<6;i++)
 			 sum=sum+ball[i];
 		return sum;
+		
 	}
 	
 	
